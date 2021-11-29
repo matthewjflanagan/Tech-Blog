@@ -1,0 +1,29 @@
+<!-- This file is part of the View. It handles UI/UX concerns (layout and display)-->
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="flex-column justify-space-around">
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        Tech Blog
+      </h1>
+    </header>
+      <main class="container container-fluid mt-5">
+      <!-- The following line is a place holder for where the main content will be rendered. -->
+
+      <!-- We would expect to see the contents of all.handlebars in the browser, 
+			because that is what we are instructing it to render in dish-routes.js. -->
+      {{!-- 3 curly braces renders HTML as HTML, 2 curly braces is for plain data --}}
+     {{{ body }}}
+      </main>
+  </div>
+  </body>
+
+</html>
+
+
