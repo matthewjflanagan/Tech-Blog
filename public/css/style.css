@@ -6,23 +6,8 @@
     box-sizing: border-box;
 }
 
-.pics {
-    display: flex;
-    flex-wrap: wrap;
-    width: 150px;
-    height: auto;
-    padding: 10px;
-    background-color: #FF006F;
-    border-radius: 10px;
-    margin: 10% 0;
-}
-
-.rpsbody {
+.body {
     background-color: #217568;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .hide {
@@ -30,18 +15,20 @@
     visibility: hidden;
 }
 
-.rpsheader {
+.header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     background: #FF006F;
     padding: 2%;
     width: 100%;
 }
 
-.rpsheader h1 {
-    color: white;
+.header h1 {
     font-family: 'Orbitron', sans-serif;
+}
+
+.homepagelink {
+    color: white;
 }
 
 .score-board {
@@ -59,42 +46,10 @@
     position: relative;
 }
 
-.badge {
-    background: #FF006F;
-    border-radius: 10px;
-    font-size: 14px;
-    padding: 0.5% 2%;
-}
-
-.user-label {
-    position: absolute;
-    top: 40%;
-    left: -10%;
-}
-
-.computer-label {
-    position: absolute;
-    top: 40%;
-    right: -10%;
-}
-
 .result {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
-    color: white;
-    background-color: #FF006F;
-    width: fit-content;
-    padding: 1% 2%;
-    border-radius: 10px;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-}
-
-.Endresult {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 11px;
     color: white;
     background-color: #FF006F;
     width: fit-content;
@@ -116,45 +71,4 @@
 
 .choices:hover {
     cursor: pointer;
-}
-
-.green-glow {
-    background-color: #0AFF00;
-    font-size: 26px;
-    color: white;
-    width: fit-content;
-    padding: 1% 2%;
-    border-radius: 10px;
-}
-
-.red-glow {
-    background-color: #FF0000;
-    font-size: 26px;
-    color: white;
-    width: fit-content;
-    padding: 1% 2%;
-    border-radius: 10px;
-}
-
-.grey-glow {
-    background-color: #D4D4D4;
-    font-size: 26px;
-    color: white;
-    width: fit-content;
-    padding: 1% 2%;
-    border-radius: 10px;
-}
-
-.rpsWinDiv {
-    justify-content: center;
-    background: #FF006F;
-    width: 80%;
-    max-width: 550px;
-}
-
-.rpsLoseDiv {
-    justify-content: center;
-    background: #FF006F;
-    width: 80%;
-    max-width: 550px;
 }
