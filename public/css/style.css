@@ -1,166 +1,160 @@
-:root {
-    --primary: #389393;
-    --secondary: #f5a25d;
-    --tertiary: #fa7f72;
-    --quatrinary: #6c6b67;
-    --light: #ebebeb;
-    --dark: #182c23;
-    --error: rgb(228, 46, 1);
-    --border-radius: 0.3rem;
-  }
-  
-  body {
-    font-family: Arial;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@621&display=swap');
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    background-color: #FF006F;
+    border-radius: 10px;
+    margin: 10% 0;
+}
+
+.rpsbody {
+    background-color: #217568;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.rpsheader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #FF006F;
+    padding: 2%;
+    width: 100%;
+}
+
+.rpsheader h1 {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    margin: 1% auto;
+    border: 3px solid white;
+    width: 50%;
+    color: white;
+    font-size: 26px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2% 3%;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+}
+
+.badge {
+    background: #FF006F;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 0.5% 2%;
+}
+
+.user-label {
+    position: absolute;
+    top: 40%;
+    left: -10%;
+}
+
+.computer-label {
+    position: absolute;
+    top: 40%;
+    right: -10%;
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: white;
+    background-color: #FF006F;
+    width: fit-content;
+    padding: 1% 2%;
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.Endresult {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: white;
+    background-color: #FF006F;
+    width: fit-content;
+    padding: 1% 2%;
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.choices {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-    background-color: var(--quatrinary);
-  }
-  
-  header {
-    padding: 40px;
-    text-align: center;
-    background: var(--primary);
-    color: var(--secondary);
-    border-bottom-style: solid;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  }
-  
-  aside {
-    flex: 0;
-    background-color: var(--tertiary);
-    padding: 80px;
-    text-align: left;
-    color: var(--light);
-  }
-  
-  nav {
-    display: flex;
-    background-color: var(--secondary);
-  }
-  
-  .menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75%;
-    min-height: 100%;
-    margin: 0px auto;
-    border: 3px solid var(--primary);
-    border-radius: var(--border-radius);
-    border-style: solid;
-    border-width: medium;
-    background-color: var(--light);
-    color: var(--dark);
-    padding: 50px;
-    background-color: #ebebeb;
-  }
-  
-  .add-dish-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 35%;
-    min-height: 100%;
-    min-width: 35%;
-    margin: 5px auto;
-    border: 3px solid var(--primary);
-    border-radius: var(--border-radius);
-    border-style: solid;
-    border-width: medium;
-    background-color: var(--light);
-    color: var(--dark);
-    padding: 50px;
-    text-align: center;
-    background-color: var(--tertiary);
-  }
-  
-  .edit-dish-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 35%;
-    min-height: 100%;
-    min-width: 35%;
-    margin: 5px auto;
-    border: 3px solid var(--primary);
-    border-radius: var(--border-radius);
-    border-style: solid;
-    border-width: medium;
-    background-color: var(--light);
-    color: var(--dark);
-    padding: 50px;
-    text-align: center;
-    background-color: var(--tertiary);
-  }
-  
-  /* CARDS */
-  .dish-card {
-    margin: 20px;
-    flex: 0 1 300px;
-    padding: 5px;
-    width: 35%;
-    min-height: 100%;
-    min-width: 35%;
-    border: 3px solid var(--primary);
-    border-radius: var(--border-radius);
-    border-style: solid;
-    border-width: medium;
-    background-color: var(--light);
-    color: var(--dark);
-  }
-  
-  .menu-card {
-    margin: 50px;
-    flex: 0 1 300px;
-    padding: 5px;
-    border: 3px solid var(--dark);
-    border-radius: var(--border-radius);
-    border-style: groove;
-    border-width: thick;
-    background-color: var(--light);
-    color: var(--dark);
-  }
-  
-  .card-header {
-    color: var(--light);
-    margin: 0;
-    background-color: var(--secondary);
-    padding: 0.625rem;
-    border: 3px solid var(--primary);
-    border-radius: var(--border-radius);
-    border-style: solid;
-    border-width: medium;
-  }
-
-  .has-nuts {
-    color: var(--error)
-  }
-
-  .dish-card-header {
-    font-size: 1.5rem;
-    color: var(--tertiary);
-    margin: 0;
-    background-color: var(--light);
-    padding: 0.625rem;
-    border-bottom-style: solid;
-  }
-  
-  .card-body {
-    padding: 2.5%;
-    font-size: 1.4rem;
-    text-align: center;
-  }
-  
-  /* LAYOUT */
-  .container {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: flex-start;
     align-items: center;
-  }
-  
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 2% 0;
+}
+
+.choices:hover {
+    cursor: pointer;
+}
+
+.green-glow {
+    background-color: #0AFF00;
+    font-size: 26px;
+    color: white;
+    width: fit-content;
+    padding: 1% 2%;
+    border-radius: 10px;
+}
+
+.red-glow {
+    background-color: #FF0000;
+    font-size: 26px;
+    color: white;
+    width: fit-content;
+    padding: 1% 2%;
+    border-radius: 10px;
+}
+
+.grey-glow {
+    background-color: #D4D4D4;
+    font-size: 26px;
+    color: white;
+    width: fit-content;
+    padding: 1% 2%;
+    border-radius: 10px;
+}
+
+.rpsWinDiv {
+    justify-content: center;
+    background: #FF006F;
+    width: 80%;
+    max-width: 550px;
+}
+
+.rpsLoseDiv {
+    justify-content: center;
+    background: #FF006F;
+    width: 80%;
+    max-width: 550px;
+}
