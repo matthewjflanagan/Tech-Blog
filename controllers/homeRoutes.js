@@ -1,3 +1,11 @@
+// login page for login.handlebars
+// sign-up sign-up.handlebars
+// dashboard Dashboard (only after authenticating)
+// dashboard/new Making a new Post, new-post.handlebars
+// dashboard/edit/:id Editing a post, edit.handlebars
+// Home page home.handlebars
+// post/:id Seeing a post, post.handlebars
+
 const router = require('express').Router();
 const { Project, User } = require('../models');
 const withAuth = require('../utils/auth');
@@ -27,7 +35,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/edit/:id', async (req, res) => {
   try {
     const projectData = await Project.findByPk(req.params.id, {
       include: [
@@ -40,7 +48,9 @@ router.get('/project/:id', async (req, res) => {
 
     const project = projectData.get({ plain: true });
 
-    res.render('project', {
+    console.log('project',project)
+
+    res.render('edit', {
       ...project,
       logged_in: req.session.logged_in
     });

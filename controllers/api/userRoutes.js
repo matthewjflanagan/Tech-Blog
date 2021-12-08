@@ -1,3 +1,7 @@
+// POST api/user to make a new user (signup)
+// POST api/user/login to auth a user
+// POST api/user/logout to logout
+
 const router = require('express').Router();
 const { User } = require('../../models');
 
@@ -42,7 +46,7 @@ router.post('/login', async (req, res) => {
       
       res.json({ user: userData, message: 'You are now logged in!' });
     });
-
+    console.log('req.session', req.session)
   } catch (err) {
     res.status(400).json(err);
   }

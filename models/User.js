@@ -1,3 +1,14 @@
+// id
+// name
+// email
+// password
+// User hasMany posts/articles
+// User hasMany comments
+// hooks for auth
+// checkPassword
+
+
+
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
