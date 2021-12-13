@@ -29,34 +29,7 @@
 
 .homepagelink {
     color: white;
-}
-
-.score-board {
-    display: flex;
-    justify-content: center;
-    margin: 1% auto;
-    border: 3px solid white;
-    width: 50%;
-    color: white;
-    font-size: 26px;
-    border-radius: 10px;
-    text-align: center;
-    padding: 2% 3%;
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-}
-
-.result {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    color: white;
-    background-color: #FF006F;
-    width: fit-content;
-    padding: 1% 2%;
-    border-radius: 10px;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
+    text-shadow: 0 0 5px black;
 }
 
 .choices {
@@ -71,4 +44,62 @@
 
 .choices:hover {
     cursor: pointer;
+}
+
+header, .project:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+  
+.no-button {
+    font-family: 'Orbitron', sans-serif;
+    background: none;
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+    font-size: x-large;
+    text-shadow: 0 0 5px black;
+}
+
+.no-button:hover {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    background-color: #217568;
+    transition: 1s;
+    text-shadow: 0 0 5px black;
+}
+
+.blogContent {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 5px black;
+}
+
+.blogUser {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 3px white;
+}
+
+.blogTitle {
+    font-family: 'Orbitron', sans-serif;
+    color: #FF006F;
+    text-shadow: 0 0 5px white;
+}
+
+.editBlogLinks {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.deleteBtn {
+    box-shadow: 0 0 5px white;
+    font-family: 'Orbitron', sans-serif;
+    padding: 5px;
+    background-color: #FF006F;
+    border-radius: 10px;
+    font-weight:500;
+    color: white;
 }

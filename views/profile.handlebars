@@ -12,11 +12,11 @@
 
     <form class="form new-project-form">
       <div class="form-group">
-        <label for="project-name">Blog Title:</label>
+        <label for="project-name" class="blogTitle">Blog Title:</label>
         <input class="form-input" type="text" id="project-name" name="project-name" />
       </div>
       <div class="form-group">
-        <label for="project-desc">Post:</label>
+        <label for="project-desc" class="blogContent">Post:</label>
         <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
       </div>
       <div class="form-group">
@@ -27,15 +27,15 @@
 
   {{#if projects.length}}
   <div class="col-md-6 project-list">
-    <h3>Blog Posts:</h3>
+    <h3 class="blogTitle">Blog Posts:</h3>
 
     {{#each projects as |project|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/edit/{{project.id}}">{{project.name}}</a></h4>
+        <h4><a class="editBlogLinks" href="/edit/{{project.id}}">{{project.name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+        <button class="deleteBtn" data-id="{{project.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
