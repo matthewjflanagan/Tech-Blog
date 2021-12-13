@@ -94,7 +94,7 @@ header, .project:not(:last-child) {
     text-shadow: 0 0 5px black;
 }
 
-.deleteBtn {
+.pinkBtn {
     box-shadow: 0 0 5px white;
     font-family: 'Orbitron', sans-serif;
     padding: 5px;
