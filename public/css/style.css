@@ -79,13 +79,14 @@ header, .project:not(:last-child) {
 
 .blogUser {
     font-family: 'Orbitron', sans-serif;
-    text-shadow: 0 0 3px white;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
 
 .blogTitle {
     font-family: 'Orbitron', sans-serif;
-    color: #FF006F;
-    text-shadow: 0 0 5px white;
+    color: white;
+    text-shadow: 0 0 5px #FF006F;
 }
 
 .editBlogLinks {
@@ -102,4 +103,16 @@ header, .project:not(:last-child) {
     border-radius: 10px;
     font-weight:500;
     color: white;
+}
+
+.signupLoginTitle {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-shadow: 0 0 5px #FF006F;
+}
+
+.signupLoginPrompt {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
