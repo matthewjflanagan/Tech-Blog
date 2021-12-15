@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-console.log("jsdfl")
 router.post('/', async (req, res) => {
   console.log("hit")
   try {
@@ -13,6 +12,25 @@ router.post('/', async (req, res) => {
     console.log("hello" + newPost)
     res.status(200).json(newPost);
   } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+router.put('/', async (req, res) => {
+  // console.log("hit++")
+  try {
+    const newPost = await Post.update({
+      ...req.body,
+    },
+    {
+      where: {
+        user_id: req.session.user_id,
+      },
+    }
+    );
+    res.status(200).json(newPost);
+  } catch (err) {
+    console.log(err)
     res.status(400).json(err);
   }
 });
