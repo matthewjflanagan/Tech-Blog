@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 
-header, .project:not(:last-child) {
+header, .post:not(:last-child) {
     border-bottom: 1px solid #ccc;
 }
   

@@ -10,14 +10,14 @@
   <div class="col-md-6 blogContent">
     <h3>Say what's on your mind in the world of TECH!!:</h3>
 
-    <form class="form new-project-form">
+    <form class="form new-post-form">
       <div class="form-group">
-        <label for="project-name" class="blogTitle">Blog Title:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="post-name" class="blogTitle">Blog Title:</label>
+        <input class="form-input" type="text" id="post-name" name="post-name" />
       </div>
       <div class="form-group">
-        <label for="project-desc" class="blogContent">Post:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="post-desc" class="blogContent">Post:</label>
+        <textarea class="form-input" id="post-desc" name="post-desc"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="pinkBtn">Submit Post</button>
@@ -25,17 +25,17 @@
     </form>
   </div>
 
-  {{#if projects.length}}
-  <div class="col-md-6 project-list">
+  {{#if posts.length}}
+  <div class="col-md-6 post-list">
     <h3 class="blogTitle">Blog Posts:</h3>
 
-    {{#each projects as |project|}}
+    {{#each posts as |post|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a class="editBlogLinks" href="/edit/{{project.id}}">{{project.name}}</a></h4>
+        <h4><a class="editBlogLinks" href="/edit/{{post.id}}">{{post.name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="pinkBtn" data-id="{{project.id}}">DELETE</button>
+        <button class="pinkBtn" data-id="{{post.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
