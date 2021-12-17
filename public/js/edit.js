@@ -1,8 +1,8 @@
 const updateBtn = document.querySelector('#updateEditBtn');
 
 const editPost = async (event)  => {
-    var name = document.querySelector('#nameInput').value;
-    var description = document.querySelector('#editInput').value;
+    const name = document.querySelector('#nameInput').value;
+    const description = document.querySelector('#editInput').value;
 
     console.log('edit values ' + name + description);
 

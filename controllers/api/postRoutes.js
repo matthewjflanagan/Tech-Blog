@@ -24,7 +24,7 @@ router.put('/:id', withAuth, async (req, res) => {
     },
     {
       where: {
-        user_id: req.session.user_id,
+        id: req.params.id,
       },
     }
     );
