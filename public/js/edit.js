@@ -1,17 +1,17 @@
 const updateBtn = document.querySelector('#updateEditBtn');
-console.log('hit here')
 
-const editPost = async ()  => {
+const editPost = async (event)  => {
     var name = document.querySelector('#nameInput').value;
-    var edit = document.querySelector('#editInput').value;
+    var description = document.querySelector('#editInput').value;
 
-    console.log(name + edit);
+    console.log('edit values ' + name + description);
 
-    if (name && edit) {
-        // Send a POST request to the API endpoint
-        const response = await fetch('/api/posts', {
+    if (name && description) {
+      const id = event.target.getAttribute('data-id');
+        // Send a PUT request to the API endpoint
+        const response = await fetch(`/api/posts/${id}`, {
           method: 'PUT',
-          body: JSON.stringify({ name, edit }),
+          body: JSON.stringify({ name, description }),
           headers: { 'Content-Type': 'application/json' },
         });
     

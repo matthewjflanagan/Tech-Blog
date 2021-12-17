@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/', async (req, res) => {
+router.put('/:id', withAuth, async (req, res) => {
   // console.log("hit++")
   try {
     const newPost = await Post.update({
