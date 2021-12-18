@@ -1,7 +1,7 @@
 # Tech-Blog
 
 ## Description
-CMS-style blog site for the purpose of publishing articles, blog posts, thoughts and options
+CMS-style blog site for the purpose of publishing articles, blog posts, thoughts and opinions! 
 
 ## Table of Contents
 - [Installation](#installation)
@@ -11,10 +11,20 @@ CMS-style blog site for the purpose of publishing articles, blog posts, thoughts
 - [Contact](#contact)
 
 ## Installation
+Visit the URL below:
+https://nameless-spire-37534.herokuapp.com/
 
 ## Usage
+![Homepage](assets/Images/homepage.png)
+
+![Signup & Login](assets/Images/signup.png)
+
+![Profile](assets/Images/profile.png)
+
+![Update Post](assets/Images/edit.png)
 
 ## Credits
+My always helpful tutor assisting in multiple weeks on building this app as well as the numerous AskBCS Assistants always willing to help! 
 
 ## License
 MIT License
