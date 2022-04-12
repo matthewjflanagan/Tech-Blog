@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@621&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 .body {
-    background-color: #217568;
+    background-color: #282828;
 }
 
 .hide {
@@ -18,18 +18,19 @@
 .header {
     display: flex;
     flex-wrap: wrap;
-    background: #FF006F;
+    background: #282828;
     padding: 2%;
     width: 100%;
 }
 
 .header h1 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 .homepagelink {
-    color: white;
-    text-shadow: 0 0 5px black;
+    color: #41FF00;
+    text-shadow: 0 0 5px white;
+    text-decoration: none;
 }
 
 .choices {
@@ -51,68 +52,68 @@ header, .post:not(:last-child) {
 }
   
 .no-button {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Space Mono', monospace;
     background: none;
     border: none;
     padding: 1%;
     cursor: pointer;
-    color: white;
+    color: #41FF00;
     text-decoration: none;
     font-size: 100%;
     font-size: x-large;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px white;
 }
 
 .no-button:hover {
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    background-color: #217568;
+    font-family: 'Space Mono', monospace;
+    color: #41FF00;
+    background-color: #282828;
     transition: 1s;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px white;
 }
 
 .blogContent {
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 0 0 5px black;
+    color: #41FF00;
+    font-family: 'Space Mono', monospace;
+    text-shadow: 0 0 5px white;
 }
 
 .blogUser {
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    text-shadow: 0 0 5px black;
+    font-family: 'Space Mono', monospace;
+    color: #41FF00;
+    text-shadow: 0 0 5px white;
 }
 
 .blogTitle {
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    text-shadow: 0 0 5px #FF006F;
+    font-family: 'Space Mono', monospace;
+    color: #41FF00;
+    text-shadow: 0 0 5px white;
 }
 
 .editBlogLinks {
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    text-shadow: 0 0 5px black;
+    font-family: 'Space Mono', monospace;
+    color: #41FF00;
+    text-shadow: 0 0 5px white;
 }
 
 .pinkBtn {
     box-shadow: 0 0 5px white;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Space Mono', monospace;
     padding: 5px;
-    background-color: #FF006F;
+    background-color: #282828;;
     border-radius: 10px;
     font-weight:500;
-    color: white;
+    color: #41FF00;
 }
 
 .signupLoginTitle {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Space Mono', monospace;
     color: white;
-    text-shadow: 0 0 5px #FF006F;
+    text-shadow: 0 0 5px black;
 }
 
 .signupLoginPrompt {
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    text-shadow: 0 0 5px black;
+    font-family: 'Space Mono', monospace;
+    color: #41FF00;
+    text-shadow: 0 0 5px white;
 }
