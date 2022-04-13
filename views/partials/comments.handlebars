@@ -1,0 +1,20 @@
+  {{#each this}}
+<div class="container">
+  <div class="card mb-5">
+    <div class="row justify-content-around card-header">
+      <div class="col-md-6">By {{this.user.username}}</div>
+
+      <div class="col-md-6 ">
+        <a href="https://github.com/{{user.github}}"><i class="fab fa-github"></i></a>
+        |
+        {{format_date this.date_created}}
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="card-text">
+          {{this.comment_body}}
+      </p>
+    </div>
+  </div>
+</div>
+  {{/each}}
